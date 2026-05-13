@@ -9,6 +9,7 @@ pipeline {
         
         stage('Clone Repo') {
             steps {
+                sh 'rm -rf docker-deplo'
                 sh 'git clone https://github.com/kingad07/docker-deplo.git'
             }
         }
